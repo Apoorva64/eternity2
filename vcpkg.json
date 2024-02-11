@@ -1,0 +1,25 @@
+{
+  "name": "eternity2",
+  "version-string": "1",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    "cli11",
+    "fast-cpp-csv-parser",
+    "spdlog"
+  ],
+  "features": {
+    "tests": {
+      "description": "Build tests",
+      "dependencies": [
+        "catch2"
+      ]
+    }
+  }
+}

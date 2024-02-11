@@ -9,10 +9,10 @@ std::vector<PIECE> load_from_csv(const std::string &filename) {
 
 
     std::vector<PIECE> pieces = {};
-    char *a;
-    char *b;
-    char *c;
-    char *d;
+    char *a{};
+    char *b{};
+    char *c{};
+    char *d{};
     while (in.read_row(a, b, c, d)) {
         auto as = (PIECE_PART) atoi(a);
         auto bs = (PIECE_PART) atoi(b);

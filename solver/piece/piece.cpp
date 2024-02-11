@@ -11,7 +11,7 @@ PIECE make_piece(PIECE_PART top, PIECE_PART right, PIECE_PART down, PIECE_PART l
     return (PIECE) left | ((PIECE) down << 16) | ((PIECE) right << 32) | ((PIECE) top << 48);
 }
 
-PIECE rotate_piece_right(PIECE piece, int n) {
+PIECE rotate_piece_right(PIECE piece, size_t n) {
     // rotate the piece n times
     PIECE rotated_piece = piece >> (16 * n);
     // add the bits that were shifted out to the beginning
@@ -19,7 +19,7 @@ PIECE rotate_piece_right(PIECE piece, int n) {
     return rotated_piece;
 }
 
-PIECE rotate_piece_left(PIECE piece, int n) {
+PIECE rotate_piece_left(PIECE piece, size_t n) {
     // rotate the piece n times
     PIECE rotated_piece = piece << (16 * n);
     // add the bits that were shifted out to the end

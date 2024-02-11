@@ -26,9 +26,9 @@ std::vector<std::string> piece_to_string(PIECE piece);
 
 PIECE make_piece(PIECE_PART top, PIECE_PART right, PIECE_PART down, PIECE_PART left);
 
-PIECE rotate_piece_right(PIECE piece, int n);
+PIECE rotate_piece_right(PIECE piece, size_t n);
 
-PIECE rotate_piece_left(PIECE piece, int n);
+PIECE rotate_piece_left(PIECE piece, size_t n);
 
 void log_piece(PIECE piece, const std::string &description);
 

@@ -12,7 +12,7 @@ Board create_board(int size) {
     return board;
 }
 
-void place_piece(Board &board, const RotatedPiece &piece, int x, int y) {
+void place_piece(Board &board, const RotatedPiece &piece, size_t x, size_t y) {
     // function to place a piece on the board at the given position
     // the piece is rotated and placed on the board
     board[y][x] = piece;
@@ -24,7 +24,7 @@ void remove_piece(Board &board, int x, int y) {
     board[y][x] = RotatedPiece();
 }
 
-std::vector<RotatedPiece> possible_pieces(const Board &board, const std::vector<PIECE> &pieces, int x, int y) {
+std::vector<RotatedPiece> possible_pieces(const Board &board, const std::vector<PIECE> &pieces, size_t x, size_t y) {
     // function to get the possible pieces that can be placed at the given position on the board
     // a piece is possible if it does not conflict with the pieces already on the board
     std::vector<RotatedPiece> possible;
@@ -43,7 +43,7 @@ std::vector<RotatedPiece> possible_pieces(const Board &board, const std::vector<
         right = WALL;
         mask |= RIGHT_MASK;
     }
-    if (x - 1 >= 0) {
+    if (x >= 1) {
         left = get_piece_part(apply_rotation(board[y][x - 1]), RIGHT_MASK);
         if (left != EMPTY) {
             mask |= LEFT_MASK;
@@ -63,7 +63,7 @@ std::vector<RotatedPiece> possible_pieces(const Board &board, const std::vector<
         mask |= DOWN_MASK;
     }
 
-    if (y - 1 >= 0) {
+    if (y >= 1) {
         top = get_piece_part(apply_rotation(board[y - 1][x]), DOWN_MASK);
         if (top != EMPTY) {
             mask |= UP_MASK;
@@ -75,7 +75,11 @@ std::vector<RotatedPiece> possible_pieces(const Board &board, const std::vector<
 
     PIECE piece = make_piece(top, right, bottom, left);
     log_piece(piece, "Query piece");
-    const auto query = Query(piece, mask);
+    const auto query = Query{
+        .piece = piece,
+        .mask = mask,
+        .type = QueryType::POSITIVE
+    };
     possible = match_piece_mask({query}, pieces);
     return possible;
 }
@@ -86,10 +90,10 @@ std::vector<std::string> board_to_string(const Board &board) {
     std::vector<std::string> board_lines;
     for (const auto &row: board) {
         std::vector<std::string> row_lines = piece_to_string(rotate_piece_right(row[0].piece, row[0].rotation));
-        for (int i = 1; i < row.size(); i++) {
+        for (size_t i = 1; i < row.size(); i++) {
             const auto &piece = row[i].piece;
             const auto &piece_lines = piece_to_string(rotate_piece_right(piece, row[i].rotation));
-            for (int j = 0; j < row_lines.size(); j++) {
+            for (size_t j = 0; j < row_lines.size(); j++) {
                 row_lines[j] += piece_lines[j];
             }
         }
@@ -108,7 +112,7 @@ void log_board(const Board &board, const std::string &description) {
 #endif
 }
 
-bool solve_board_recursive(Board &board, std::vector<PIECE> &pieces, int x, int y) {
+bool solve_board_recursive(Board &board, std::vector<PIECE> &pieces, size_t x, size_t y) {
     // function to solve the board recursively
     // the function tries to place a piece at the given position and then calls itself for the next position
     // if the board is solved, the function returns true

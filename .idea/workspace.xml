@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="false" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="vs2022-windows" ENABLED="false" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build" />
+      <configuration PROFILE_NAME="ninja-windows" ENABLED="false" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build" />
+      <configuration PROFILE_NAME="ninja-linux" ENABLED="false" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build" />
+      <configuration PROFILE_NAME="ninja-windows - ninja-windows" ENABLED="false" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build" />
+      <configuration PROFILE_NAME="ninja-linux - ninja-linux" ENABLED="false" FROM_PRESET="true" GENERATION_DIR="$PROJECT_DIR$/build" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c0ffb54-f361-4466-ac23-eb84f081b178" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.clang-tidy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakePresets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vcpkg.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/eternity2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/eternity2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/CLI11/CLI11.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/CLI11/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/csv/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/csv/csv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/async.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/async_logger-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/async_logger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/cfg/argv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/cfg/env.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/cfg/helpers-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/cfg/helpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/common-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/backtracer-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/backtracer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/circular_q.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/console_globals.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/file_helper-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/file_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/fmt_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/log_msg-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/log_msg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/log_msg_buffer-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/log_msg_buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/mpmc_blocking_q.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/null_mutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/os-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/os.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/periodic_worker-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/periodic_worker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/registry-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/registry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/synchronous_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/tcp_client-windows.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/tcp_client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/thread_pool-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/thread_pool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/udp_client-windows.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/udp_client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/details/windows_include.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bin_to_hex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/args.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/chrono.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/color.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/compile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/core.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/fmt.license.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/format-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/format.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/locale.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/os.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/ostream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/ranges.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/std.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/bundled/xchar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/chrono.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/compile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/fmt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/ostr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/ranges.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/std.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fmt/xchar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/formatter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/fwd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/logger-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/logger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/pattern_formatter-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/pattern_formatter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/android_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/ansicolor_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/ansicolor_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/base_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/base_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/basic_file_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/basic_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/callback_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/daily_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/dist_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/dup_filter_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/hourly_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/kafka_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/mongo_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/msvc_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/null_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/ostream_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/qt_sinks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/ringbuffer_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/rotating_file_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/rotating_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/stdout_color_sinks-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/stdout_color_sinks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/stdout_sinks-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/stdout_sinks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/syslog_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/systemd_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/tcp_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/udp_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/win_eventlog_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/wincolor_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/sinks/wincolor_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/spdlog-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/spdlog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/stopwatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/tweakme.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external-libs/spdlog/spdlog/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/solver/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/board/board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solver/board/board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/board/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/solver/board/board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solver/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/piece/piece.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solver/piece/piece.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/piece/piece.h" beforeDir="false" afterPath="$PROJECT_DIR$/solver/piece/piece.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/piece_loader/piece_loader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/solver/piece_loader/piece_loader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solver/piece_loader/piece_loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/solver/piece_loader/piece_loader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CMakeLists.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:ninja-linux" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2cDOD91s3SXIDKdgsJF7IKmJ44L" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.solver.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.advertisement.text.overridden": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c0ffb54-f361-4466-ac23-eb84f081b178" name="Changes" comment="" />
+      <created>1707642560498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707642560498</updated>
+      <workItem from="1707642562447" duration="407000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+</project>

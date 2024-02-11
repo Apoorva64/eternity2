@@ -1,25 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-set(CMAKE_CXX_STANDARD 20)
-find_package(OpenMP)
-add_executable(Solver main.cpp
-        piece/piece.cpp
-        piece/piece.h
-        piece_loader/piece_loader.cpp
-        piece_loader/piece_loader.h
-        piece_search/piece_search.cpp
-        piece_search/piece_search.h
-        board/board.cpp
-        board/board.h
-)
-target_link_libraries(Solver spdlog csv OpenMP::OpenMP_CXX)
-target_compile_definitions(Solver PUBLIC SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_OFF)
 
-# add Wall flag
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
-# build release
-set(CMAKE_BUILD_TYPE Release)
-
-# add library
 add_library(solver_lib STATIC
         piece/piece.cpp
         piece/piece.h
@@ -30,7 +10,21 @@ add_library(solver_lib STATIC
         board/board.cpp
         board/board.h)
 
+set_target_properties(solver_lib PROPERTIES LINKER_LANGUAGE CXX)
+target_compile_features(solver_lib PUBLIC cxx_std_20)
+
 target_include_directories(solver_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-target_link_libraries(solver_lib spdlog csv OpenMP::OpenMP_CXX)
-set_target_properties(solver_lib PROPERTIES LINKER_LANGUAGE CXX)
+find_package(spdlog CONFIG REQUIRED)
+target_link_libraries(solver_lib PUBLIC spdlog::spdlog)
+
+find_path(FAST_CPP_CSV_PARSER_INCLUDE_DIRS "fast-cpp-csv-parser/csv.h")
+target_include_directories(solver_lib PUBLIC ${FAST_CPP_CSV_PARSER_INCLUDE_DIRS})
+
+add_executable(solver main.cpp)
+target_link_libraries(solver PRIVATE solver_lib)
+
+find_package(CLI11 CONFIG REQUIRED)
+target_link_libraries(solver PRIVATE CLI11::CLI11)
+
+
