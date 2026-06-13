@@ -11,6 +11,9 @@ pub mod paths;
 pub mod solver;
 pub mod types;
 
+#[cfg(not(target_arch = "wasm32"))]
+pub mod simd_solver;
+
 pub use generator::generate;
 pub use official::official_puzzle;
 pub use paths::{build_path, PATH_KINDS};
