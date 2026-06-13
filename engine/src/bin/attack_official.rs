@@ -221,8 +221,15 @@ fn maybe_publish(
 ) {
     let board = solver.best_board().to_vec();
     let score = score_board(&shared.puzzle, &board);
-    let mut best = shared.best.lock().unwrap();
-    if placed > best.placed || (placed == best.placed && score > best.score) {
+    // Update the shared record under the lock, then drop it before
+    // touching the disk: write_snapshot calls fsync, which can stall
+    // for many seconds and would freeze the tracer/snapshotter/other
+    // workers waiting on this mutex.
+    let snapshot = {
+        let mut best = shared.best.lock().unwrap();
+        if !(placed > best.placed || (placed == best.placed && score > best.score)) {
+            return;
+        }
         best.placed = placed;
         best.score = score;
         best.attempts = shared.attempts.load(Ordering::Relaxed);
@@ -232,13 +239,14 @@ fn maybe_publish(
         best.path_kind = path_kind.to_string();
         best.path_seed = path_seed;
         best.board = board;
-        println!(
-            "[{:>6.1}s] new best: placed={}/{} score={}/{}  (thread {tid}, path={path_kind}, seed={path_seed})",
-            best.elapsed_secs, best.placed, best.cells, best.score, best.max_score
-        );
-        if let Err(e) = write_snapshot(&shared.puzzle, &best) {
-            eprintln!("snapshot write failed: {e}");
-        }
+        best.clone()
+    };
+    println!(
+        "[{:>6.1}s] new best: placed={}/{} score={}/{}  (thread {tid}, path={path_kind}, seed={path_seed})",
+        snapshot.elapsed_secs, snapshot.placed, snapshot.cells, snapshot.score, snapshot.max_score
+    );
+    if let Err(e) = write_snapshot(&shared.puzzle, &snapshot) {
+        eprintln!("snapshot write failed: {e}");
     }
 }
 
